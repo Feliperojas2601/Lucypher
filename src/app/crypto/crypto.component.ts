@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CryptoService } from '../shared/services/crypto.service';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule, PlatformLocation } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 
 @Component({
@@ -25,19 +25,13 @@ export class CryptoComponent implements OnInit {
   constructor(
     private cryptoService: CryptoService,
     private route: ActivatedRoute,
-    private platformLocation: PlatformLocation,
-  ) {
-    history.pushState(null, '', location.href);
-    this.platformLocation.onPopState(() => {
-      history.pushState(null, '', location.href);
-    });
-  }
+  ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      const cryptoResponse = this.cryptoService.getCryptoByPath("/"+params["name"]);
-      if (cryptoResponse) {
-        this.crypto = cryptoResponse;
+      const cryptoServiceResponse = this.cryptoService.getCryptoByPath("/" + params["name"]);
+      if (cryptoServiceResponse) {
+        this.crypto = cryptoServiceResponse;
       }
     });
   }

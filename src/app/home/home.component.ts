@@ -1,4 +1,4 @@
-import { CommonModule, NgFor, PlatformLocation } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { CryptoService } from '../shared/services/crypto.service';
@@ -16,23 +16,14 @@ import { CryptoService } from '../shared/services/crypto.service';
 })
 export class HomeComponent implements OnInit {
   
-  public cards: any[] = [];
+  public cards!: any[];
 
   constructor(
     private cryptoServive: CryptoService,
-    private platformLocation: PlatformLocation,
-  ) { 
-    history.pushState(null, '', location.href);
-    this.platformLocation.onPopState(() => {
-      history.pushState(null, '', location.href);
-    });
-  }
+  ) {}
 
   ngOnInit(): void {
-    this.loadCards();
-  }
-
-  loadCards(): void {
+    console.log('HomeComponent.ngOnInit');
     this.cards = this.cryptoServive.getCryptoList();
   }
 }

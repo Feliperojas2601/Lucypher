@@ -19,4 +19,4 @@ handlers:
   upload: dist/lucypher/browser/index.html
 
 - url: /
-  static_dir: dist/your-angular-app 
+  static_dir: dist/luycpher/browser

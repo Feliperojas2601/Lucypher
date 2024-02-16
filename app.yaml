@@ -1,0 +1,22 @@
+runtime: nodejs20
+
+instance_class: F2
+
+env_variables: 
+  BUCKET_NAME: "lucypher-main"
+
+handlers:
+- url: /
+  static_files: dist/lucypher/browser/index.html
+  upload: dist/lucypher/browser/index.html
+
+- url: /(.*)
+  static_files: dist/lucypher/browser/index.html
+  upload: dist/lucypher/browser/index.html
+
+- url: /(.+)
+  static_files: dist/lucypher/browser/index.html
+  upload: dist/lucypher/browser/index.html
+
+- url: /
+  static_dir: dist/your-angular-app 

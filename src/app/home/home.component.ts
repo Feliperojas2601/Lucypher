@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log('HomeComponent.ngOnInit');
     this.cards = this.cryptoServive.getCryptoList();
   }
 }

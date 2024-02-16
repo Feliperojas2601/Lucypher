@@ -1,9 +1,9 @@
-runtime: nodejs20
+runtime: nodejs16
 
 instance_class: F2
 
 env_variables: 
-  BUCKET_NAME: "lucypher-main"
+  BUCKET_NAME: "lucypher-bucket"
 
 handlers:
 - url: /
@@ -19,4 +19,4 @@ handlers:
   upload: dist/lucypher/browser/index.html
 
 - url: /
-  static_dir: dist/luycpher/browser
+  static_dir: dist/lucypher/browser

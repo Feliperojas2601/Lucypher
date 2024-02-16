@@ -3,7 +3,8 @@
     <div class="home-subcontainer">
       <div class="home-subcontainer-title">
         <img src="assets/img/lucypher.jpeg" alt="Lucypher logo">
-        <h1 class="home-subcontainer-title">Welcome to the <span class="home-subcontainer-title-highlight">Lucypher</span> app!</h1>
+        <h1 class="home-subcontainer-title-h1">Welcome to the <span class="home-subcontainer-title-h1-highlight">Lucypher</span> app!</h1>
+        <h1 class="home-subcontainer-title-h1-mobile"><span class="home-subcontainer-title-h1-mobile-highlight">Lucypher</span></h1>
       </div>
       <p class="home-description">Lucypher is a web application that presents certain traditional cryptographic algorithms in Python code.</p>
     </div>
@@ -11,6 +12,11 @@
       <div class="home-card" *ngFor="let card of cards">
         <app-card [title]="card.title" [description]="card.description" [path]="card.path"></app-card>
       </div>
+    </div>
+    <div class="home-about">
+      <h2 class="home-about-title">Contact me</h2>
+      <p class="home-about-text">Email: jrojasce&#64;unal.edu.co</p>
+      <p class="home-about-text">GitHub: <a class="home-about-link" href="https://github.com/Feliperojas2601" target="_blank">Feliperojas2601</a></p>
     </div>
   </div>
 </section>

@@ -20,3 +20,45 @@
   font-size: 4rem;
   color: var(--secondary-color);
 }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .crypto-subcontainer-title img {
+    max-width: 125px;
+  }
+
+  .crypto-subcontainer-title {
+    font-size: 2rem;
+  }
+
+  .crypto-subcontainer-title-highlight {
+    font-size: 2rem;
+  }
+
+  .crypto-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crypto-container {
+    margin: 1rem 2rem;
+  }
+
+  .crypto-subcontainer-title img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+
+  .crypto-subcontainer-title {
+    font-size: 1.5rem;
+  }
+
+  .crypto-subcontainer-title-highlight {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+  }
+
+  .crypto-description {
+    font-size: 1rem;
+  }
+}

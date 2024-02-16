@@ -1,0 +1,17 @@
+<section id="crypto" class="crypto">
+  <div class="crypto-container">
+    <div class="crypto-subcontainer">
+      <div class="crypto-subcontainer-title">
+        <img src="assets/img/lucypher.jpeg" alt="Lucypher logo">
+        <h1 class="crypto-subcontainer-title"><span class="crypto-subcontainer-title-highlight">{{crypto.title}}</span></h1>
+      </div>
+      <p class="crypto-description">{{crypto.description}}</p>
+      <div class="crypto-code-card">
+        <app-code [gistUrl]="crypto.gistUrl"></app-code>
+      </div>
+    </div>
+    <div class="crypto-button">
+      <app-button [goBack]="true" [path]="crypto.path"></app-button>
+    </div>
+  </div>
+</section>

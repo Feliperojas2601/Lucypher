@@ -1,0 +1,22 @@
+.crypto-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 4rem;
+}
+
+.crypto-subcontainer-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.crypto-subcontainer-title img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.crypto-subcontainer-title-highlight {
+  font-size: 4rem;
+  color: var(--secondary-color);
+}

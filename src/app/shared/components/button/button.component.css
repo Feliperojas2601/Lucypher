@@ -1,0 +1,9 @@
+.p-button{
+ background-color: var(--secondary-color) !important;
+ color: var(--third-color) !important;
+ font-family: "IBM Plex Mono", monospace;
+ font-weight: 400;
+ width: 33%;
+ gap: 0.5rem;
+ border: 1px solid var(--secondary-color) !important;
+}

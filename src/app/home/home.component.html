@@ -1,0 +1,16 @@
+<section id="home" class="home">
+  <div class="home-container">
+    <div class="home-subcontainer">
+      <div class="home-subcontainer-title">
+        <img src="assets/img/lucypher.jpeg" alt="Lucypher logo">
+        <h1 class="home-subcontainer-title">Welcome to the <span class="home-subcontainer-title-highlight">Lucypher</span> app!</h1>
+      </div>
+      <p class="home-description">Lucypher is a web application that presents certain traditional cryptographic algorithms in Python code.</p>
+    </div>
+    <div class="home-cards">
+      <div class="home-card" *ngFor="let card of cards">
+        <app-card [title]="card.title" [description]="card.description" [path]="card.path"></app-card>
+      </div>
+    </div>
+  </div>
+</section>

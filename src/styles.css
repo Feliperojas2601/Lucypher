@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+:root {
+  --main-color: #100E40;
+  --secondary-color: #F2EFBD;
+  --third-color: #010326;
+  --text-color: #f0f0f0;
+}
+
+html {
+  font-size: 100%;
+}
+
+::before, 
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}

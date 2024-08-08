@@ -60,6 +60,18 @@ export class CryptoService {
       description: '1991 - The Digital Signature Algorithm (DSA) is a digital signature standard (DSS) for digital signatures.',
       path: '/dsa',
       gistUrl: 'https://gist.github.com/Feliperojas2601/ffa584820b207aeab9cc09eca5aa4b78.js'
+    }, 
+    {
+      title: 'RSA',
+      description: '1977 - The RSA algorithm is an asymmetric cryptographic algorithm used for encryption and decryption.',
+      path: '/rsa',
+      gistUrl: 'https://gist.github.com/Feliperojas2601/7d5c0b33cb22590b2ce28cc58d338809.js'
+    }, 
+    {
+      title: 'Solidity - Ethereum',
+      description: '2015 - Solidity is a contract-oriented, high-level language for implementing smart contracts. This is an example for an auction contract.',
+      path: '/solidity',
+      gistUrl: 'https://gist.github.com/Feliperojas2601/c27f2385e1e64e03078c5035f6b634f8.js'
     }
   ];
 

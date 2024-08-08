@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import path from 'node:path';
 
 @Injectable({
   providedIn: 'root'
@@ -53,6 +54,12 @@ export class CryptoService {
       description: '16-th century - The Vigenère cipher is a substitution polyalphabetic based on a table technique.', 
       path: '/vigenere',
       gistUrl: 'https://gist.github.com/Feliperojas2601/1ceb6f3d531a5eb5c63609970e421087.js'
+    }, 
+    {
+      title: 'DSA', 
+      description: '1991 - The Digital Signature Algorithm (DSA) is a digital signature standard (DSS) for digital signatures.',
+      path: '/dsa',
+      gistUrl: 'https://gist.github.com/Feliperojas2601/ffa584820b207aeab9cc09eca5aa4b78.js'
     }
   ];
 

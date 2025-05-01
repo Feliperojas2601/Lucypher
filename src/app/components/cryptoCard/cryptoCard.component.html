@@ -1,0 +1,9 @@
+<div class="card bg-base-300 w-full sm:w-80 md:w-96 shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title text-lg sm:text-xl md:text-2xl font-bold">{{ algorithm().title }}</h2>
+      <p class="text-sm sm:text-base">{{ algorithm().description }}</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-accent btn-sm sm:btn-md" [routerLink]="['/crypto', algorithm().name]">Go to details</button>
+      </div>
+    </div>
+</div>

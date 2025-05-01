@@ -81,7 +81,11 @@ export class CryptoService {
         return this.cryptoAlgorithms;
     }
 
-    getCryptoAlgorithmGist(algorithmName: CryptoAlgorithmName) {
-        return '';
+    getCryptoAlgorithmDetails(algorithmName: CryptoAlgorithmName): CryptoAlgorithm {
+        const algorithm = this.cryptoAlgorithms.find(algorithm => algorithm.name === algorithmName);
+        if (!algorithm) {
+            throw new Error(`Algorithm ${algorithmName} not found`);
+        }
+        return algorithm;
     }
 }

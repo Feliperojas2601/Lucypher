@@ -13,6 +13,7 @@
 .header-letter:nth-child(6) { animation-delay: 0.6s; }
 .header-letter:nth-child(7) { animation-delay: 0.7s; }
 .header-letter:nth-child(8) { animation-delay: 0.8s; }
+.header-letter:nth-child(9) { animation-delay: 0.9s; }
 
 @keyframes letterAppear {
     from {
